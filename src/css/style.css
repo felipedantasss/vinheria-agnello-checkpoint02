@@ -1,0 +1,244 @@
+
+@import url("efeitos.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #2d1b16;
+}
+
+header {
+    background-color: #3b1717;
+    color: white;
+    padding: 25px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #5a2020;
+}
+
+section h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #5a2020;
+}
+
+section p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+section img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+}
+
+section ul {
+    margin-left: 25px;
+    line-height: 2;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+.catalogo-vinhos {
+    margin-top: 30px;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.tabela-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabela-container thead {
+    background-color: #3b1717;
+    color: white;
+}
+
+.tabela-container th {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tabela-container td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5ddd5;
+    color: #4a3832;
+}
+
+.tabela-container tbody tr {
+    transition: 0.2s;
+}
+
+.tabela-container tbody tr:hover {
+    background-color: #f8f2ec;
+}
+
+.tabela-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.nome-vinho {
+    font-weight: bold;
+    color: #5a2020 !important;
+}
+
+.preco {
+    font-weight: bold;
+    color: #5a2020 !important;
+    white-space: nowrap;
+}
+
+form {
+    margin-top: 25px;
+}
+
+form label {
+    font-weight: bold;
+    color: #3b1717;
+}
+
+#nome,
+#email,
+#mensagem {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #cfc3b8;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+#nome:focus,
+#email:focus,
+#mensagem:focus {
+    outline: none;
+    border-color: #5a2020;
+}
+
+#mensagem {
+    resize: vertical;
+}
+
+form button {
+    background-color: #3b1717;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5a2020;
+}
+
+footer {
+    background-color: #3b1717;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+
+
+
+
+
+

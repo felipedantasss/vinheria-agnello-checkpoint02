@@ -1,0 +1,96 @@
+
+
+/* EFEITO AO PASSAR O MOUSE NO MENU */
+header nav a {
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+header nav a:hover {
+    color: #c9a45c !important;
+    background-color: #4a1018;
+    transform: translateY(-3px);
+}
+
+/* DESTAQUE AO SELECIONAR CAMPOS */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #c9a45c;
+    outline-offset: 4px;
+}
+
+/* COR ALTERNADA NAS LINHAS DA TABELA */
+tbody tr:nth-child(even) {
+    background-color: #f5eee5;
+}
+
+/* EFEITO AO SELECIONAR TEXTO */
+::selection {
+    background-color: #8b1e2d;
+    color: white;
+}
+
+/* DETALHES DOS TITULOS */
+h2::before {
+    content: "🍷 ";
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 8px;
+    background-color: #c9a45c;
+    transition: width 0.3s ease;
+}
+
+h2:hover::after {
+    width: 90px;
+}
+
+/* ANIMACAO DE ENTRADA */
+@keyframes entradaSuave {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: entradaSuave 0.8s ease-out;
+}
+
+/* EFEITO NAS IMAGENS */
+main img {
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+main img:hover {
+    transform: scale(1.03) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* EFEITO NOS BOTOES */
+button {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
