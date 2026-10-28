@@ -67,4 +67,17 @@ O projeto utiliza CSS para deixar a navegação mais interativa e agradável. Fo
 
 ## JavaScript
 
-Nesta etapa do projeto, foram aplicados conceitos fundamentais de
+Nesta etapa do projeto, foram aplicados conceitos fundamentais de JavaScript para trabalhar a lógica de programação e o processamento de informações sobre vinhos.
+
+- **Variáveis:** armazenamento de dados.
+- **Funções:** organização e reutilização do código.
+- **Estruturas condicionais:** verificação de informações.
+- **Estruturas de repetição:** processamento de múltiplos cadastros.
+- **Entrada e saída de dados:** interação com o usuário utilizando `prompt()` e `alert()`.
+- **Validação de dados:** verificação das informações fornecidas.
+- **Análise de estoque:** identificação de vinhos com estoque baixo.
+- **Análise de safra:** identificação da safra mais antiga cadastrada.
+- **Resumo final:** apresentação dos resultados do processamento.
+
+O objetivo dessa etapa é aplicar os conhecimentos de JavaScript na prática, ampliando a lógica e as funcionalidades do projeto.
+
